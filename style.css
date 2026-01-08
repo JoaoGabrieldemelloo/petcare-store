@@ -1,70 +1,53 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial;
-}
-
 body {
-  background: #f4fff9;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#8ee2ce, #e9fff8);
+  margin: 0;
 }
 
 header {
   text-align: center;
-  padding: 25px;
-  background: linear-gradient(90deg, #8be6a2, #6dc4ff);
-  color: white;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
   padding: 20px;
 }
 
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.products {
+  display: flex;
   gap: 15px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
   background: white;
-  border-radius: 20px;
-  padding: 10px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
   text-align: center;
+  box-shadow: 0 0 8px #ccc;
 }
 
 .card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
-.card button {
-  margin-top: 8px;
+.price {
+  font-weight: bold;
+}
+
+button {
+  padding: 8px;
+  border-radius: 8px;
   border: none;
-  padding: 8px 15px;
-  border-radius: 15px;
-  background: #8be6a2;
   cursor: pointer;
 }
 
-.carrinho {
+.cart {
+  position: fixed;
+  right: 20px;
+  top: 120px;
+  width: 260px;
   background: white;
   padding: 15px;
-  border-radius: 20px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.2);
-}
-
-.carrinho button {
-  padding: 8px 12px;
-  border-radius: 15px;
-  border: none;
-  background: #6dc4ff;
-  cursor: pointer;
-  color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #aaa;
 }
