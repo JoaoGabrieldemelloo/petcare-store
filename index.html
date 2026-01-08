@@ -1,30 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetCare Store</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<div class="product-list">
 
-<body>
+    <div class="product">
+        <img src="img/racao-cachorro.png" alt="Ração Premium 10kg para cães">
+        <h3>Ração Premium 10kg para cães</h3>
+        <p>R$ 159.90</p>
+        <button onclick="addToCart('Ração Premium 10kg para cães', 159.90)">Adicionar ao carrinho</button>
+    </div>
 
-<header>
-  <h1>🐾 PetCare Store</h1>
-  <p>Amor e cuidado para o seu melhor amigo</p>
-</header>
+    <div class="product">
+        <img src="img/brinquedo-mordedor.png" alt="Brinquedo mordedor resistente">
+        <h3>Brinquedo mordedor resistente</h3>
+        <p>R$ 29.90</p>
+        <button onclick="addToCart('Brinquedo mordedor resistente', 29.90)">Adicionar ao carrinho</button>
+    </div>
 
-<main>
-  <section class="produtos" id="lista-produtos"></section>
+    <div class="product">
+        <img src="img/coleira-ajustavel.png" alt="Coleira ajustável para cães">
+        <h3>Coleira ajustável para cães</h3>
+        <p>R$ 24.90</p>
+        <button onclick="addToCart('Coleira ajustável para cães', 24.90)">Adicionar ao carrinho</button>
+    </div>
 
-  <aside class="carrinho">
-    <h2>🛒 Carrinho</h2>
-    <ul id="itens-carrinho"></ul>
-    <p id="total">Total: R$ 0,00</p>
-    <button onclick="finalizarPedido()">Finalizar no WhatsApp</button>
-  </aside>
-</main>
+    <div class="product">
+        <img src="img/areia-gatos.png" alt="Areia higiênica para gatos">
+        <h3>Areia higiênica para gatos</h3>
+        <p>R$ 39.90</p>
+        <button onclick="addToCart('Areia higiênica para gatos', 39.90)">Adicionar ao carrinho</button>
+    </div>
 
-<script src="script.js"></script>
-</body>
-</html>
+    <div class="product">
+        <img src="img/shampoo-pet.png" alt="Shampoo neutro para pets">
+        <h3>Shampoo neutro para pets</h3>
+        <p>R$ 22.90</p>
+        <button onclick="addToCart('Shampoo neutro para pets', 22.90)">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="product">
+        <img src="img/petisco-bifinho.png" alt="Petisco bifinho para cães">
+        <h3>Petisco bifinho para cães</h3>
+        <p>R$ 14.90</p>
+        <button onclick="addToCart('Petisco bifinho para cães', 14.90)">Adicionar ao carrinho</button>
+    </div>
+
+</div>
